@@ -1,0 +1,105 @@
+html {
+
+}
+body {
+  font-family:  Verdana,sans-serif, Cambria, Arial  ; /* Семейство шрифтов */
+  font-size: 12pt; /* Размер основного шрифта в пунктах  */
+  background-color: #E4FAF9;  /* Цвет фона веб-страницы */
+  color: #333; /* Цвет основного текста */ 
+}
+/* оставим первую страницу без размытия стрелки, но со множественным фоном под 
+заголовками. А остальные страницы с размытием "карьерной" стрелки и без фона....
+А совместить не получилось... */
+
+div.bckgr { /*   ВО ЧО НАШЛОСЬ   на просторах интернета !!! */
+  background: url("вверх!.png") right/contain no-repeat,  /* называктся множествееный фон*/
+                       url("WB02077_.gif") ;
+/*  background-repeat: no-repeat;             
+background-position: right; 
+background-size: contain; 
+linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+}
+.blur {   /* пришлось отказаться. Мешало наложению фонов */
+  background: rgba(255, 255, 255, 0.2);  /* Крууууть !!! */
+ /*  backdrop-filter: blur(8px);     */
+  backdrop-filter: blur(2px) saturate(120%) contrast(200%); 
+/*  height: 100vh;
+  width: 50%; */
+}
+.crazy{
+         margin-top: -50px;
+}
+table {
+	width: 900;
+        background-image: url("WB02077_.gif");
+	horizontal-align: center;
+	border: 0px solid #dddddd;
+	border-collapse: collapse; 
+        padding: 0; 
+}
+table td {
+        border: 0px solid silver;
+	padding: 0px 0px 0px 0px;
+        vertical-align: top;      
+}
+td.td1 {
+	border-right: 7px silver;
+        border-bottom: 7px silver;
+        border-style: dotted; 
+}
+td.td2 {
+        width: 25%;
+	border-right: 7px silver;
+	padding: 20px 5px 5px 5px;
+        border-style: dotted;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 10px;
+  margin-left: 10px;
+   font-size: 14;   
+}
+
+h3{
+  margin-top: 20px;
+   font-size: 20;
+   color: #009BE1; 
+   text-align: center;
+}
+font.h2 {
+   font-size: 2rem; 
+   color: #F72D00; 
+   align: center;
+   font-style: italic; 
+  margin-right: +30px;
+   letter-spacing: 3px;
+   text-shadow:
+      1px 1px 1px white,
+      5px 5px 5px #009BE1;  
+}
+font.h3 {
+   font-size: 1rem; 
+   color: #F72D00; 
+   text-align: center; /*  не работпет!!! ззззаразззаа*/
+   font-style: italic; 
+  font-weight: bolder;
+
+}
+font.h1 {
+   font-size: 2rem; 
+   color:silver; 
+   font-weight: bolder;
+   text-align: center;
+  margin-right: +30px;
+}
+ol{    font-style: italic; 
+}
+.menu ul li {
+   margin-bottom: 20px;
+}
+li::marker {
+	color:#009BE1;
+	/* font-size: 25px;*/
+}
+

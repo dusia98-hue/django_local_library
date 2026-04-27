@@ -1,0 +1,38 @@
+﻿<!-- base.html-->
+{% load static %}
+ <!DOCTYPE html>
+ <html >
+{% include "head.html" %} 
+ <body>
+<table align=center>
+<tr><td class="td1">
+<IMG src="{% static "logo.png" %}"  width = 300 align=left alt="OmGTU"> </td>
+<td><div class="bckgr" align=center>
+<font class="h1"> Омский государственный технический университет</font><br>
+<br>
+<font class="h2" > Карьерные ресурсы </font> </div>
+</td> </tr>
+<tr> <td class="td2"> <div class="menu">
+
+{% include "navig.html" %}
+  </td> 
+<td >
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</tr>
+<tr> 
+<footer>
+<td colspan=2><footer><center>
+<br>
+<font size="3" color="silver" align=left>
+<b>Лабораторная №5.</b><br>
+на тему «Шаблоны»</font>
+<A href="mailto:ivanov@mail.ru"> Связь с нами </A>
+</center></footer><br></td>
+</footer> 
+</tr>
+</table>
+ </body>
+ </html>
